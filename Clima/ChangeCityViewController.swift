@@ -1,9 +1,7 @@
-
-
 import UIKit
 
 
-//Write the protocol declaration here:
+//protocol declaration:
 protocol ChangeCityDelegate{
     func userEnteredANewCityName(city: String)
 }
@@ -21,8 +19,6 @@ class ChangeCityViewController: UIViewController {
     
     //This is the IBAction that gets called when the user taps on the "Get Weather" button:
     @IBAction func getWeatherPressed(_ sender: AnyObject) {
-        
-        
         
         //1 Get the city name the user entered in the text field
         let cityName = changeCityTextField.text

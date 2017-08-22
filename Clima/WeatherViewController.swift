@@ -1,5 +1,3 @@
-//
-
 import UIKit
 import CoreLocation
 import SwiftyJSON
@@ -25,15 +23,12 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         //TODO:Set up the location manager here. set ourself as the delegate
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestWhenInUseAuthorization()
        
         locationManager.startUpdatingLocation() //async, send msg to viewcontroller when location updated
-        
         
     }
     
@@ -61,13 +56,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     }
 
     
-    
-    
-    
-    
     //MARK: - JSON Parsing
     /***************************************************************/
-   
     
     //Write the updateWeatherData method here:
     func updateWeatherData(json: JSON){
